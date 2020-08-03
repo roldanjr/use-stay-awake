@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 
-import videoMp4 from "./assets/muted-blank.mp4";
-import videoOGV from "./assets/muted-blank.ogv";
+import videoWebm from "./assets/blank.webm";
+import videoMp4 from "./assets/blank.mp4";
 
 const useStayAwake = () => {
   const _video = useRef(document.createElement("video"));
@@ -19,17 +19,17 @@ const useStayAwake = () => {
 
     Object.assign(_video.current.style, _videoStyle);
 
+    const _source_webm = document.createElement("source");
+    _source_webm.setAttribute("src", videoWebm);
+    _source_webm.setAttribute("type", "video/webm");
+
+    _video.current.appendChild(_source_webm);
+
     const _source_mp4 = document.createElement("source");
     _source_mp4.setAttribute("src", videoMp4);
     _source_mp4.setAttribute("type", "video/mp4");
 
     _video.current.appendChild(_source_mp4);
-
-    const _source_ogg = document.createElement("source");
-    _source_ogg.setAttribute("src", videoOGV);
-    _source_ogg.setAttribute("type", "video/ogg");
-
-    _video.current.appendChild(_source_ogg);
 
     document.body.appendChild(_video.current);
   }, [_video]);

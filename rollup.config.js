@@ -21,7 +21,7 @@ export default {
       typescript: require("typescript"),
     }),
     url({
-      include: ["**/*.mp4", "**/*.ogv"],
+      include: ["**/*.mp4", "**/*.webm"],
     }),
   ],
   external: [
