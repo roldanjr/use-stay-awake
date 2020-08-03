@@ -45,7 +45,7 @@ body {
 .header p {
   font-size: 20px;
   max-width: 500px;
-  padding: 0 20px;
+  padding: 0 1.4em;
 }
 
 .control {
@@ -106,4 +106,10 @@ body {
   border-color: var(--color-border-primary);
   border-color: var(--color-border-primary);
   background-color: var(--color-border-secondary);
+}
+
+@media screen and (max-width: 425px) {
+  .header p {
+    font-size: 18px;
+  }
 }
