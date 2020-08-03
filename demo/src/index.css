@@ -54,6 +54,7 @@ body {
 
 .status {
   margin-top: 24px;
+  font-weight: 500;
 }
 
 .status span {
