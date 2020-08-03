@@ -10,6 +10,7 @@
   "source": "src/index.ts",
   "scripts": {
     "clean": "rimraf dist/",
+    "prepare": "yarn build",
     "start": "rollup -c -w",
     "prebuild": "yarn clean",
     "build": "rollup -c",
