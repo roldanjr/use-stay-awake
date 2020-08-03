@@ -1,5 +1,5 @@
 {
-  "name": "react-sleep-hook-example",
+  "name": "docs",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -20,8 +20,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
-    "typescript": "link:../node_modules/typescript",
-    "react-sleep-hook": "link:.."
+    "typescript": "link:../node_modules/typescript"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

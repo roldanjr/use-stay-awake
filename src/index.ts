@@ -1,10 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
-import VideoMp4 from "./assets/muted-blank.mp4";
-import VideoOGV from "./assets/muted-blank.ogv";
+import videoMp4 from "./assets/muted-blank.mp4";
+import videoOGV from "./assets/muted-blank.ogv";
 
 const useStayAwake = () => {
   const _video = useRef(document.createElement("video"));
+
+  const [isAllowedToSleep, setAllowedToSleep] = useState(true);
 
   useEffect(() => {
     const _videoStyle: React.CSSProperties = {
@@ -18,13 +20,13 @@ const useStayAwake = () => {
     Object.assign(_video.current.style, _videoStyle);
 
     const _source_mp4 = document.createElement("source");
-    _source_mp4.setAttribute("src", VideoMp4);
+    _source_mp4.setAttribute("src", videoMp4);
     _source_mp4.setAttribute("type", "video/mp4");
 
     _video.current.appendChild(_source_mp4);
 
     const _source_ogg = document.createElement("source");
-    _source_ogg.setAttribute("src", VideoOGV);
+    _source_ogg.setAttribute("src", videoOGV);
     _source_ogg.setAttribute("type", "video/ogg");
 
     _video.current.appendChild(_source_ogg);
@@ -32,17 +34,21 @@ const useStayAwake = () => {
     document.body.appendChild(_video.current);
   }, [_video]);
 
-  const preventSleep = () => {
+  const preventSleep = useCallback(() => {
     _video.current.setAttribute("loop", "loop");
     _video.current.play();
-  };
+
+    setAllowedToSleep(false);
+  }, []);
 
   const allowSleep = () => {
     _video.current.removeAttribute("loop");
     _video.current.pause();
+
+    setAllowedToSleep(true);
   };
 
-  return { preventSleep, allowSleep };
+  return { isAllowedToSleep, preventSleep, allowSleep };
 };
 
 export default useStayAwake;
