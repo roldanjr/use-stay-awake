@@ -34,21 +34,21 @@ const useStayAwake = () => {
     document.body.appendChild(_video.current);
   }, [_video]);
 
-  const preventSleep = useCallback(() => {
+  const preventToSleep = useCallback(() => {
     _video.current.setAttribute("loop", "loop");
     _video.current.play();
 
     setAllowedToSleep(false);
   }, []);
 
-  const allowSleep = () => {
+  const allowToSleep = () => {
     _video.current.removeAttribute("loop");
     _video.current.pause();
 
     setAllowedToSleep(true);
   };
 
-  return { isAllowedToSleep, preventSleep, allowSleep };
+  return { isAllowedToSleep, preventToSleep, allowToSleep };
 };
 
 export default useStayAwake;
