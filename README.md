@@ -66,6 +66,26 @@ export default App;
 | preventToSleep   | `function`                | Function that prevent the device from sleeping. |
 | allowToSleep     | `function`                | Function that allow the device from sleeping.   |
 
+## :sparkles: Browser Support
+
+- [x] Internet Explorer `v9-11`
+- [x] Microsoft Edge `v12-84`
+- [x] Firefox `v22-81`
+- [x] Chrome `v4-87`
+- [x] Safari `v4-14-TP`
+- [x] Opera `v16-69`
+- [x] iOS Safari `v3.2-14.0`
+- [ ] Opera Mini
+- [x] Android Browser `v4.4-81`
+- [x] Opera Mobile `v12-46`
+- [x] Chrome for Android `v84`
+- [x] Firefox for Android `v68`
+- [x] UC Browser for Android `v12.12`
+- [x] Samsung Internet `v4-12.0`
+- [x] QQ Browser `v10.4`
+- [x] Baidu Browser `v7.12`
+- [x] KaiOS Browser `v2.5`
+
 ## 🛠 Development
 
 Thank you so much for contributing! :blue_heart:
