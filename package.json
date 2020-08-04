@@ -1,10 +1,36 @@
 {
   "name": "use-stay-awake",
   "version": "1.0.0",
-  "description": "React hook that will help the device stay awake while actively using your website or app.",
   "license": "MIT",
+  "description": "React hook that will help the device stay awake while actively using your website or app.",
   "author": "roldanjr",
-  "repository": "roldanjr/use-stay-awake",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roldanjr/use-stay-awake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roldanjr/use-stay-awake/issues"
+  },
+  "homepage": "https://github.com/roldanjr/use-stay-awake#readme",
+  "keywords": [
+    "awake",
+    "wake-lock",
+    "wakelock",
+    "wake lock",
+    "wake lock hook",
+    "sleep",
+    "nosleep",
+    "no-sleep",
+    "preventSleep",
+    "prevent sleep",
+    "screen",
+    "screen lock",
+    "lock screen",
+    "keep on",
+    "mobile browser",
+    "typescript",
+    "react hook"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "source": "src/index.ts",
