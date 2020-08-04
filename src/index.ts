@@ -6,7 +6,7 @@ import videoMp4 from "./assets/blank.mp4";
 const useStayAwake = () => {
   const _video = useRef(document.createElement("video"));
 
-  const [isAllowedToSleep, setAllowedToSleep] = useState(true);
+  const [canSleep, setCanSleep] = useState(true);
 
   useEffect(() => {
     const _videoStyle: React.CSSProperties = {
@@ -34,21 +34,21 @@ const useStayAwake = () => {
     document.body.appendChild(_video.current);
   }, [_video]);
 
-  const preventToSleep = useCallback(() => {
+  const preventSleeping = useCallback(() => {
     _video.current.setAttribute("loop", "loop");
     _video.current.play();
 
-    setAllowedToSleep(false);
+    setCanSleep(false);
   }, []);
 
-  const allowToSleep = () => {
+  const allowSleeping = useCallback(() => {
     _video.current.removeAttribute("loop");
     _video.current.pause();
 
-    setAllowedToSleep(true);
-  };
+    setCanSleep(true);
+  }, []);
 
-  return { isAllowedToSleep, preventToSleep, allowToSleep };
+  return { canSleep, preventSleeping, allowSleeping };
 };
 
 export default useStayAwake;

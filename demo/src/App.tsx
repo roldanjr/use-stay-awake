@@ -17,7 +17,7 @@ function App() {
       <p className="status">
         Status:{" "}
         <span>
-          {device.isAllowedToSleep
+          {device.canSleep
             ? "Device is allowed to sleep"
             : "Device is not allowed to sleep"}
         </span>
@@ -25,19 +25,19 @@ function App() {
       <div className="control">
         <button
           className={`btn is-primary ${
-            !device.isAllowedToSleep ? "is-active" : ""
+            !device.canSleep ? "is-active" : ""
           }`.trim()}
-          onClick={device.preventToSleep}
+          onClick={device.preventSleeping}
         >
-          Prevent Sleep
+          Prevent Sleeping
         </button>
         <button
           className={`btn is-secondary ${
-            device.isAllowedToSleep ? "is-active" : ""
+            device.canSleep ? "is-active" : ""
           }`.trim()}
-          onClick={device.allowToSleep}
+          onClick={device.allowSleeping}
         >
-          Allow Sleep
+          Allow Sleeping
         </button>
       </div>
     </div>

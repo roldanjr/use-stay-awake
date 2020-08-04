@@ -40,24 +40,24 @@ function App() {
       <p>
         Status:
         <span>
-          {device.isAllowedToSleep
+          {device.canSleep
             ? "Device is allowed to sleep"
             : "Device is not allowed to sleep"}
         </span>
       </p>
       <button
         onClick={() => {
-          device.preventToSleep();
+          device.preventSleeping();
         }}
       >
-        Prevent Sleep
+        Prevent Sleeping
       </button>
       <button
         onClick={() => {
-          device.allowToSleep();
+          device.allowSleeping();
         }}
       >
-        Allow Sleep
+        Allow Sleeping
       </button>
     </div>
   );
@@ -68,11 +68,11 @@ export default App;
 
 ## :spider_web: Properties
 
-| Prop Name        | Type                      | Description                                     |
-| ---------------- | ------------------------- | ----------------------------------------------- |
-| isAllowedToSleep | `boolean` default: `true` | Indicator if the device allowed to sleep.       |  |
-| preventToSleep   | `function`                | Function that prevent the device from sleeping. |
-| allowToSleep     | `function`                | Function that allow the device from sleeping.   |
+| Prop Name       | Type                      | Description                                     |
+| --------------- | ------------------------- | ----------------------------------------------- |
+| canSleep        | `boolean` default: `true` | Indicator if the device allowed to sleep.       |  |
+| preventSleeping | `function`                | Function that prevent the device from sleeping. |
+| allowSleeping   | `function`                | Function that allow the device from sleeping.   |
 
 ## :dizzy: Browser Support
 
