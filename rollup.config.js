@@ -24,7 +24,7 @@ export default {
     }),
     url({
       include: ["**/*.mp4", "**/*.webm"],
-      limit: "819200"
+      limit: "819200",
     }),
   ],
   external: [
