@@ -10,13 +10,16 @@
   "source": "src/index.ts",
   "scripts": {
     "clean": "rimraf dist/",
-    "prepare": "yarn build",
-    "start": "rollup -c -w",
-    "prebuild": "yarn clean",
-    "build": "rollup -c",
-    "test": "jest",
-    "predeploy": "npm run build --prefix=demo",
-    "deploy": "gh-pages -d demo/build"
+    "prepare": "yarn build:lib",
+    "start:lib": "rollup -c -w",
+    "prebuild:lib": "yarn clean",
+    "build:lib": "rollup -c",
+    "test:lib": "jest",
+    "start:demo": "npm run start --prefix=demo",
+    "predeploy:demo": "npm run build --prefix=demo",
+    "deploy:demo": "gh-pages -d demo/build",
+    "postinstall": "cd demo && yarn install",
+    "develop": "run-p start:lib start:demo"
   },
   "jest": {
     "transform": {
@@ -42,6 +45,7 @@
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.7",
     "gh-pages": "^2.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
