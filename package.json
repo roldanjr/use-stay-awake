@@ -17,7 +17,7 @@
     "start:demo": "npm run start --prefix=demo",
     "predeploy:demo": "npm run build --prefix=demo",
     "deploy:demo": "gh-pages -d demo/build",
-    "postinstall": "cd demo && yarn install",
+    "postinstall": "yarn format && cd demo && yarn install",
     "develop": "run-p start:lib start:demo",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "jest"
