@@ -35,11 +35,29 @@ body {
 }
 
 .header {
-  margin-top: 10%;
+  margin-top: 20vh;
+}
+
+.header a {
+  text-decoration-color: transparent;
+  color: var(--color-heading-text);
+  transition: color 320ms ease;
+}
+
+.header a:hover {
+  color: var(--color-black);
+  text-decoration-color: var(--color-black);
 }
 
 .header h1 {
-  color: var(--color-heading-text);
+  color: currentColor;
+  margin: 0;
+}
+
+.header svg {
+  width: 3.2em;
+  height: 3.2em;
+  fill: currentColor;
 }
 
 .header p {
@@ -109,7 +127,19 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .container {
+    height: 100%;
+  }
+
+  .header {
+    margin-top: 16%;
+  }
+
   .header p {
     font-size: 18px;
+  }
+
+  .btn {
+    padding: 0.8em 1.2em;
   }
 }

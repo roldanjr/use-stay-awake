@@ -1,5 +1,6 @@
 import React from "react";
 import useStayAwake from "use-stay-awake";
+import { ReactComponent as GithubSVG } from "./github.svg";
 
 function App() {
   const device = useStayAwake();
@@ -7,7 +8,10 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>use-stay-awake</h1>
+        <a href="https://github.com/roldanjr/use-stay-awake">
+          <GithubSVG />
+          <h1>use-stay-awake</h1>
+        </a>
         <p>
           React hook that will help the device stay awake while actively using
           your website or app.
