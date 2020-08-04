@@ -2,6 +2,8 @@
 
 > React hook that will help the device stay awake while actively using your website or app.
 
+[Live Demo](https://roldanjr.github.io/use-stay-awake/)
+
 [![NPM](https://img.shields.io/npm/v/use-stay-awake.svg)](https://www.npmjs.com/package/use-stay-awake) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## :sparkles: Features
@@ -83,7 +85,6 @@ export default App;
 - [x] Safari `v4-14-TP`
 - [x] Opera `v16-69`
 - [x] iOS Safari `v3.2-14.0`
-- [ ] Opera Mini
 - [x] Android Browser `v4.4-81`
 - [x] Opera Mobile `v12-46`
 - [x] Chrome for Android `v84`
