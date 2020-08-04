@@ -4,6 +4,14 @@
 
 [![NPM](https://img.shields.io/npm/v/use-stay-awake.svg)](https://www.npmjs.com/package/use-stay-awake) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## :sparkles: Features
+
+- [x] Lightweight
+- [x] Typescript support
+- [x] Best browser support
+- [x] Easy to implement
+- [x] CPU friendly
+
 ## :comet: Installation
 
 1. Using Yarn
@@ -66,7 +74,7 @@ export default App;
 | preventToSleep   | `function`                | Function that prevent the device from sleeping. |
 | allowToSleep     | `function`                | Function that allow the device from sleeping.   |
 
-## :sparkles: Browser Support
+## :dizzy: Browser Support
 
 - [x] Internet Explorer `v9-11`
 - [x] Microsoft Edge `v12-84`
@@ -105,8 +113,15 @@ Thank you so much for contributing! :blue_heart:
    ```
 
 3. Install library dependencies
+
    ```sh
     yarn install or npm install
+   ```
+
+4. Start development server
+
+   ```sh
+    yarn develop or npm run develop
    ```
 
 ## :bookmark_tabs: License
