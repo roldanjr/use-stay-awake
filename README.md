@@ -15,6 +15,7 @@
 - [x] Best browser support
 - [x] Easy to implement
 - [x] CPU friendly
+- [x] Zero dependencies
 
 ## :comet: Installation
 
