@@ -1,6 +1,6 @@
 {
   "name": "use-stay-awake",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "React hook that will help the device stay awake while actively using your website or app.",
   "author": "roldanjr",
@@ -43,7 +43,6 @@
     "start:demo": "npm run start --prefix=demo",
     "predeploy:demo": "npm run build --prefix=demo",
     "deploy:demo": "gh-pages -d demo/build",
-    "postinstall": "yarn format && cd demo && yarn install",
     "develop": "run-p start:lib start:demo",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "jest"

@@ -122,7 +122,14 @@ Thank you so much for contributing! :blue_heart:
     yarn install or npm install
    ```
 
-4. Start development server
+4. Locate demo folder and install dependencies
+
+   ```sh
+    cd demo
+    yarn install or npm install
+   ```
+
+5. Start development server under root folder
 
    ```sh
     yarn develop or npm run develop
