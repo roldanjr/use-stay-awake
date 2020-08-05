@@ -32,7 +32,7 @@ const useStayAwake = () => {
     _video.current.appendChild(_source_mp4);
 
     document.body.appendChild(_video.current);
-  }, [_video]);
+  }, []);
 
   const preventSleeping = useCallback(() => {
     _video.current.setAttribute("loop", "loop");
