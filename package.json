@@ -1,6 +1,6 @@
 {
   "name": "use-stay-awake",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "description": "React hook that will help the device stay awake while actively using your website or app.",
   "author": "roldanjr",
@@ -59,7 +59,7 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^16.8.0"
   },
   "devDependencies": {
     "@rollup/plugin-url": "^5.0.1",
