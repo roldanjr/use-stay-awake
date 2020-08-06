@@ -10,7 +10,6 @@
 
 ## :sparkles: Features
 
-- [x] Lightweight
 - [x] Typescript support
 - [x] Best browser support
 - [x] Easy to implement
