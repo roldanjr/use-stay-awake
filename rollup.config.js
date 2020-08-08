@@ -7,12 +7,6 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: "cjs",
-      sourcemap: true,
-      exports: "default",
-    },
-    {
-      file: pkg.module,
       format: "esm",
       sourcemap: true,
       exports: "default",
