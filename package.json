@@ -46,17 +46,12 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "jest"
   },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ]
+  "engines": {
+    "node": ">=10"
   },
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
@@ -81,11 +76,5 @@
     "rollup-plugin-typescript2": "^0.27.1",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
-  },
-  "engines": {
-    "node": ">=10"
-  },
-  "files": [
-    "lib"
-  ]
+  }
 }
