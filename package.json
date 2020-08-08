@@ -31,10 +31,10 @@
     "typescript",
     "react hook"
   ],
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "source": "src/index.ts",
   "scripts": {
-    "clean": "rimraf dist/",
+    "clean": "rimraf lib/",
     "prepare": "yarn build:lib",
     "start:lib": "rollup -c -w",
     "prebuild:lib": "yarn clean",
@@ -86,6 +86,6 @@
     "node": ">=10"
   },
   "files": [
-    "dist"
+    "lib"
   ]
 }

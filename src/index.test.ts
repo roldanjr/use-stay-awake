@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import useStayAwake from "../dist";
+import useStayAwake from "../lib";
 
 jest.spyOn(HTMLMediaElement.prototype, "play").mockReturnThis();
 jest.spyOn(HTMLMediaElement.prototype, "pause").mockReturnThis();
