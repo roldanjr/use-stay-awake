@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "lts/*"
+  - "12.18.3"
 
 cache:
   yarn: true
