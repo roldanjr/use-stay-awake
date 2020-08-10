@@ -2,6 +2,8 @@ import typescript from "rollup-plugin-typescript2";
 import url from "@rollup/plugin-url";
 import pkg from "./package.json";
 
+// TODO: try to make the bundle size much smaller using babel
+
 export default {
   input: pkg.source,
   output: [
