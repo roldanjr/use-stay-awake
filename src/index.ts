@@ -9,6 +9,8 @@ const useStayAwake = () => {
   const [canSleep, setCanSleep] = useState(true);
 
   useEffect(() => {
+    _video.current.muted = true;
+
     const _videoStyle: React.CSSProperties = {
       position: "absolute",
       top: "0",
