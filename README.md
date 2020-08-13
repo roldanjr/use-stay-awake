@@ -2,7 +2,7 @@
 
 [Live Demo](https://roldanjr.github.io/use-stay-awake/)
 
-> React hook that will help the device stay awake while actively using your website or app.
+> React hook that make device stay awake while actively using your website.
 
 [![Build Status](https://travis-ci.com/roldanjr/use-stay-awake.svg?branch=master)](https://travis-ci.com/roldanjr/use-stay-awake)
 [![NPM](https://img.shields.io/npm/v/use-stay-awake.svg)](https://www.npmjs.com/package/use-stay-awake) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
