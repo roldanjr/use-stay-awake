@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 
-import videoWebm from "./assets/blank.webm";
-import videoMp4 from "./assets/blank.mp4";
-
 const useStayAwake = () => {
   const _video = useRef(document.createElement("video"));
 
   const [canSleep, setCanSleep] = useState(true);
 
   useEffect(() => {
+    const videoWebm = require("./assets/blank.webm");
+    const videoMp4 = require("./assets/blank.mp4");
+
     _video.current.muted = true;
 
     const _videoStyle: React.CSSProperties = {

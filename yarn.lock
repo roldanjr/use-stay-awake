@@ -4851,7 +4851,7 @@ fs-extra@^4.0.2:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^7.0.0:
+fs-extra@^7.0.0, fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
   integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
@@ -9358,6 +9358,13 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rollup-plugin-copy-assets@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-copy-assets/-/rollup-plugin-copy-assets-2.0.1.tgz#a95956fa504e409d72d2303650ad9e537b65f9b4"
+  integrity sha512-GfSvObeVcCmL1df22JNgdSVDmCP73ackhCfw5xE7sV/tKtdh79nwkwpHJ8JjeeAC5swfnLHHivFb7xPz85n8+g==
+  dependencies:
+    fs-extra "^7.0.1"
 
 rollup-plugin-typescript2@^0.27.1:
   version "0.27.1"

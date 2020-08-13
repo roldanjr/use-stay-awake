@@ -1,8 +1,6 @@
 import typescript from "rollup-plugin-typescript2";
-import url from "@rollup/plugin-url";
+import copy from "rollup-plugin-copy-assets";
 import pkg from "./package.json";
-
-// TODO: try to make the bundle size much smaller using babel
 
 export default {
   input: pkg.source,
@@ -18,9 +16,8 @@ export default {
     typescript({
       typescript: require("typescript"),
     }),
-    url({
-      include: ["**/*.mp4", "**/*.webm"],
-      limit: "819200",
+    copy({
+      assets: ["src/assets"],
     }),
   ],
   external: [
