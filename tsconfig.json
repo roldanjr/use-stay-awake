@@ -3,7 +3,6 @@
     "module": "es2015",
     "moduleResolution": "node",
     "jsx": "react",
-    "sourceMap": true,
     "declaration": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
