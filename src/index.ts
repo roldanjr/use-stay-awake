@@ -30,6 +30,7 @@ const useStayAwake = () => {
     const _source_mp4 = document.createElement("source");
     _source_mp4.setAttribute("src", videoMp4);
     _source_mp4.setAttribute("type", "video/mp4");
+    _source_mp4.setAttribute("playsinline", "");
 
     _video.current.appendChild(_source_mp4);
 
